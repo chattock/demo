@@ -1,0 +1,14 @@
+---
+title: "Data"
+output: html_document
+---
+
+```{r}
+# Function to transform data
+transform_data <- function(data) {
+  head(as.data.frame(data))
+}
+
+# Use the function on a built-in dataset
+transform_data(mtcars)
+```
