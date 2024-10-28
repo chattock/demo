@@ -359,9 +359,8 @@ transform_data &lt;- function(data) {
 }
 
 # Second transformation function
-transform_data_2 &lt;- function(data) {
-  # Example transformation: summary of the data
-  summary(as.data.frame(data))
+transform_data_2 &lt;- function(data_new) {
+  summary(as.data.frame(data_new))
 }
 
 # Use the functions on a built-in dataset
