@@ -4,11 +4,18 @@ output: html_document
 ---
 
 ```{r}
-# Function to transform data
+# First transformation function
 transform_data <- function(data) {
   head(as.data.frame(data))
 }
 
-# Use the function on a built-in dataset
+# Second transformation function
+transform_data_2 <- function(data) {
+  # Example transformation: summary of the data
+  summary(as.data.frame(data))
+}
+
+# Use the functions on a built-in dataset
 transform_data(mtcars)
+transform_data_2(mtcars)
 ```
